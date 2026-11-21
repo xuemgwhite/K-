@@ -1,0 +1,15 @@
+node_modules
+.venv
+dist
+.env
+data/raw/*
+data/processed/*
+data/backtests/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/processed/DEMO_NQ_1m.parquet
+!data/backtests/.gitkeep
+*.log
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts

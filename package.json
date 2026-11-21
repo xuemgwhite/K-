@@ -1,0 +1,26 @@
+{
+  "name": "k-replay-lab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"pnpm run dev:api\" \"pnpm run dev:web\"",
+    "dev:web": "vite",
+    "dev:api": "node server/index.js",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "download:data": "python3 scripts/download_databento.py"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "lightweight-charts": "^5.0.1",
+    "vite": "^6.1.0",
+    "typescript": "~5.7.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3"
+  },
+  "devDependencies": {}
+}
